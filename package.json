@@ -1,0 +1,21 @@
+{
+  "name": "fashionhub-sprint-2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --runInBand",
+    "db:schema": "psql \"$DATABASE_URL\" -f database/schema.sql",
+    "db:seed": "psql \"$DATABASE_URL\" -f database/seed.sql"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
